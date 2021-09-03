@@ -3,9 +3,8 @@ library country_code_conversion;
 import 'languages.dart';
 
 class CountryCodeConversion {
-
   /// get display name language by code.
-  Future<String?> getDisplayLanguageByCode(String languageCode) async {
+  String? getDisplayLanguageByCode(String languageCode) {
     if (languageCode.isEmpty) {
       return null;
     }
@@ -19,7 +18,7 @@ class CountryCodeConversion {
   }
 
   /// get display name English language by code.
-  Future<String?> getEnglishDisplayLanguageByCode(String languageCode) async {
+  String? getEnglishDisplayLanguageByCode(String languageCode) {
     if (languageCode.isEmpty) {
       return null;
     }
@@ -33,9 +32,9 @@ class CountryCodeConversion {
   }
 
   /// get language code by language name.
-  Future<String?> getLanguageCodeByName(String languageName) async {
+  String? getLanguageCodeByName(String languageName) {
     if (languageName.isEmpty) {
-      return Future.value(null);
+      return null;
     }
 
     String? languageCode;

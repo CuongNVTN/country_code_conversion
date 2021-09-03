@@ -9,10 +9,10 @@ import 'package:country_code_conversion/country_code_conversion.dart';
 
 ```$dart
 final countryCodeConversion = CountryCodeConversion();
-String? name = await countryCodeConversion.getDisplayLanguageByCode("vi-VN");
-String? nameE = await countryCodeConversion.getEnglishDisplayLanguageByCode("vi-VN");
-String? code = await countryCodeConversion.getLanguageCodeByName("Tiếng Việt");
-String? codeE = await countryCodeConversion.getLanguageCodeByName("Vietnamese");
+String? name = countryCodeConversion.getDisplayLanguageByCode("vi-VN");
+String? nameE = countryCodeConversion.getEnglishDisplayLanguageByCode("vi-VN");
+String? code = countryCodeConversion.getLanguageCodeByName("Tiếng Việt");
+String? codeE = countryCodeConversion.getLanguageCodeByName("Vietnamese");
 
 print(name); // Tiếng Việt
 print(nameE); // Vietnamese
