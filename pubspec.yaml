@@ -1,7 +1,7 @@
 name: country_code_conversion
 description: A project to convert country codes to country names and vice versa.
-version: 0.0.1
-homepage:
+version: 1.0.1
+homepage: https://github.com/CuongNVTN/country_code_conversion
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
