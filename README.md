@@ -1,14 +1,15 @@
 # country_code_conversion
 
-A project to convert country codes to country names and vice versa.
+Currently support 54 languages.
 
-## Getting Started
+## Usage
+```$dart
+import 'package:country_code_conversion/country_code_conversion.dart';
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+final countryCodeConversion = CountryCodeConversion();
+String? name = await countryCodeConversion.getDisplayLanguageByCode("vi-VN");
+String? nameE = await countryCodeConversion.getEnglishDisplayLanguageByCode("vi-VN");
+String? code = await countryCodeConversion.getLanguageCodeByName("Tiếng Việt");
+String? codeE = await countryCodeConversion.getLanguageCodeByName("Vietnamese");
+}
+```
