@@ -13,4 +13,9 @@ String? name = await countryCodeConversion.getDisplayLanguageByCode("vi-VN");
 String? nameE = await countryCodeConversion.getEnglishDisplayLanguageByCode("vi-VN");
 String? code = await countryCodeConversion.getLanguageCodeByName("Tiếng Việt");
 String? codeE = await countryCodeConversion.getLanguageCodeByName("Vietnamese");
+
+print(name); // Tiếng Việt
+print(nameE); // Vietnamese
+print(code); // vi-VN
+print(codeE); // vi-VN
 ```
